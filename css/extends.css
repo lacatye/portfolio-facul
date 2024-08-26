@@ -1,9 +1,11 @@
+/* Reset geral */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo global do corpo */
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: #ffffff;
@@ -11,6 +13,7 @@ body {
     line-height: 1.6;
 }
 
+/* Estilo dos links */
 a {
     text-decoration: none;
     color: #ff8dbe;
@@ -21,21 +24,23 @@ a:hover {
     color: #ff8dbe;
 }
 
+/* Estilo dos logos */
 .logo {
-    width: 100px; 
+    width: 120px; 
     height: auto; 
 }
 
 .thaly {
-    width: 400px; 
+    width: 500px; 
     height: auto; 
     border-radius: 50%; 
 }
 
+/* Navbar */
 .navbar {
     background-color: #f9f9f9;
-    padding: 1rem;
-    font-size: 23px; 
+    padding: 1.5rem;
+    font-size: 25px; 
 }
 
 .navbar-web {
@@ -50,12 +55,12 @@ a:hover {
 }
 
 .navbar-link li {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .navbar-link li a {
     font-weight: 500;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 5px;
 }
 
@@ -64,32 +69,33 @@ a:hover {
     color: #fff;
 }
 
+/* Header */
 .header-web {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
-    font-size: 20px; 
-    background: linear-gradient(to bottom right, #f2f2f2 20%, #ff8dbe 200%);
+    padding: 3rem;
+    font-size: 22px; 
+    background: linear-gradient(to bottom right, #f2f2f2 30%, #ff8dbe 200%);
 }
 
 .header-left {
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .header-left h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #ff8dbe;
 }
 
 .header-left p {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     color: rgb(0, 0, 0);
 }
 
 .button-about {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 2rem;
     background-color: #ff8dbe;
     color: #fff;
     border-radius: 5px;
@@ -98,42 +104,58 @@ a:hover {
 }
 
 .button-about:hover {
-    background-color: #ff69b4;
+    background-color: #ffffff;
 }
 
+/* Seção Sobre */
 .about-web {
-    padding: 2rem;
+    padding: 3rem;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 .about-left, .about-right {
-    max-width: 500px;
+    flex: 1; 
+    max-width: 49%; 
+    background-color: #ffe6f0; 
+    border-radius: 10px; 
+    padding: 2rem;
 }
 
 .secondary-title {
     font-size: 2rem;
     color: #ff8dbe;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .tertiary-title {
     font-size: 1.5rem;
     color: #ff8dbe;
+    text-align: left;
+    margin-bottom: 1rem;
 }
 
+/* Seção Educacional */
 .educationalbk {
-    padding: 2rem;
+    padding: 5rem; 
     background: #f9f9f9;
+    border: 2px #ff8dbe; 
+    border-radius: 15px; 
+    margin: 4rem;
 }
 
 .educational-web {
-    max-width: 800px;
+    max-width: 1200px; 
     margin: 0 auto;
     text-align: center;
 }
 
+/* Seção de Projetos */
 .projects-web {
-    padding: 3rem;
+    padding: rem;
 }
 
 .projects-w {
@@ -143,44 +165,88 @@ a:hover {
 .projects-web ul {
     list-style: none;
     display: flex;
+    margin: 50px;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .projects-web li {
     display: flex;
     align-items: center;
     background-color: #f2f2f2;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 10px;
 }
 
 .projects-web li img {
-    width: 100px;
+    width: 120px;
     margin-right: 6rem;
     border-radius: 10px;
 }
 
 .projects-info {
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .projects-info h3 {
     margin-bottom: 0.5rem;
 }
 
-.footer-web {
-    background: linear-gradient(to bottom, #ffffff 85%, #f2f2f2 15%);
-    padding: 2rem;
-    text-align: center;
+/* Rodapé */
+footer {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
 }
 
 .footer-contact {
-    margin-top: 0.5rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 600px;
 }
 
-.footer-contact span {
+.footer-contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact div {
+    margin-bottom: 1rem;
+}
+
+.footer-contact label {
+    font-size: 1.2rem;
+    color: #190e13;
     display: block;
-    font-weight: bold;
-    color: #ff8dbe;
+    margin-bottom: 0.5rem;
+}
+
+.footer-contact input,
+.footer-contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.footer-contact button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ff8dbe;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-contact button:hover {
+    background-color: #ff69b4;
 }

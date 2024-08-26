@@ -52,11 +52,6 @@
             <p>
                 Sou super fã de cultura geek, astronomia e filosofia. Fora do trabalho, você me encontra curtindo com a família ou experimentando novas receitas na cozinha. Adoro ler e estou sempre curiosa sobre tudo.
             </p>
-            <ul>
-                <li>
-                    <a href="#"><img src="assets/linkedin.svg" alt="Linkedin" /></a>
-                </li>
-            </ul>
         </div>
         <div class="about-right">
             <h3 class="tertiary-title about">
@@ -136,19 +131,27 @@
             </li>
         </ul>
     </section>
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="footer-web">
-            <h2 class="tertiary-title o-footer">Isso é um pouco sobre mim</h2>
-            <p class="footer-k">
-                Espero que tenha gostado dos meus projetos.
-            </p>
-            <div class="footer-contact">
-                <span class="mb-m">thalytadiniz03@gmail.com</span>
-            </div>
+<!-- Footer -->
+<footer id="footer">
+    <div class="footer-web">
+        <!-- Formulário de Contato -->
+        <div class="footer-contact">
+            <h2 class="secondary-title">Contato</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button-about">Enviar</button>
+            </form>
         </div>
-    </footer>
-    <!-- script -->
-    <script src="scripts/index.js"></script>
-</body>
-</html>
+    </div>
+</footer>
